@@ -1,0 +1,40 @@
+// About Page
+.about.hero {
+    background-image: linear-gradient(
+        to right,
+        rgba($dark, 0.9),
+        rgba(0,0,0, 0.6)
+    ),
+        url("../img/about-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+
+    h2 {
+        padding-bottom: 1rem;
+    }
+    span {
+        color: $primary;
+    }
+}
+
+main.about-page {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3rem;
+
+    h2 {
+        padding-top: 2rem;
+    }
+}
+
+@include media-lg{
+    main.about-page {
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
+}

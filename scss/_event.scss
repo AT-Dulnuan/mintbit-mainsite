@@ -1,0 +1,27 @@
+// Events Page
+main.event-page {
+    h2.title {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .event-cards {
+        padding: 5% 0;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    @include media-md{
+        .card {
+            width: 50%;
+            margin: auto;
+    
+            .subtitle {
+                padding-top: 0.25rem;
+            }
+        }
+    }
+}

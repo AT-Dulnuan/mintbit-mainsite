@@ -1,0 +1,76 @@
+// Footer
+footer {
+    background-color: $primary;
+
+    img.logo {
+        width: 5rem;
+    }
+
+    .container {
+        padding: 1.5rem 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .menu {
+        margin: 1rem 0;
+        a {
+            color: $text;
+            font-weight: bold;
+            line-height: 2rem;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: $dark;
+            }
+        }
+    }
+
+    .socials {
+        font-size: 2rem;
+        a {
+            color: $text;
+            &:hover {
+                color: $dark;
+            }
+        }
+    }
+
+}
+.copyright {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+// Desktop View
+@include media-lg {
+    footer {
+        padding: 3rem 0;
+        .container {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+
+            .menu {
+                flex-grow: 1;
+                ul {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-between;
+                }
+            }
+
+            .logo {
+                flex-grow: 2;
+            }
+
+            .socials {
+                flex-grow: 2;
+            }
+        }
+    }
+}

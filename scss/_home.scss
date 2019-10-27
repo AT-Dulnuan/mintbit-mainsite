@@ -1,0 +1,150 @@
+// Hero
+.home.hero {
+    background-image: linear-gradient(
+        to right,
+        rgba($dark, 0.9),
+        rgba($dark, 0.3)
+    ),
+        url("../img/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+
+    a.button {
+        padding: 1.5rem 2rem;
+        margin-top: 1rem;
+    }
+}
+
+
+//Services Section
+.services {
+    img {
+        height: 80px;
+    }
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+
+    .service {
+        padding: 2rem 0;
+    }
+}
+
+// Events Section
+.events {
+    .card-content {
+        a {
+            margin-top: 1rem;
+        }
+    }
+}
+
+// Contact Section
+.contact {
+    form {
+        h2 {
+            padding-bottom: 2rem;
+        }
+        border: 2px solid $primary;
+        padding: 2rem;
+        @include box-shadow;
+    }
+}
+
+// Tablet View
+@include media-md {
+    .services {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .service:first-child {
+            margin: 0 1.5rem;
+        }
+    }
+}
+
+// Desktop View
+@include media-lg {
+    .hero {
+        h1, p {
+            text-align: left;
+        }
+
+        a.button {
+            float: left;
+        }
+    }
+
+    .services {
+        width: 80%;
+        margin: auto;
+    }
+
+    .events {
+        .card {
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+    .contact {
+        form {
+           width: 50%;
+           padding: 3rem;
+        }
+    }
+
+    footer {
+        padding: 3rem 0;
+        .container {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+
+            .menu {
+                flex-grow: 1;
+                ul {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-between;
+                }
+            }
+
+            .logo {
+                flex-grow: 2;
+            }
+
+            .socials {
+                flex-grow: 2;
+            }
+        }
+    }
+}
+
+// Tablet View
+@include media-md {
+    .services {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .service:first-child {
+            margin: 0 1.5rem;
+        }
+    }
+
+    .contact {
+        form {
+            max-width: 70%;
+            margin: auto;
+        }
+    }
+}

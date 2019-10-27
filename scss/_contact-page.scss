@@ -1,0 +1,32 @@
+// Contact Page
+.contact.hero-body{
+    background-image: linear-gradient(
+        to right,
+        rgba($dark, 0.9),
+        rgba($dark, 0.3)
+    ),
+        url("../img/contact/contact-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.contact {
+    form {
+        width: 100%;
+        margin: auto;
+        background-color: $dark;
+
+        .header-text {
+            padding-bottom: 2.5rem;
+            
+            h2 {
+                padding: 0;
+            }
+        }
+    }
+    @include media-lg {
+        form {
+            max-width: 60%;
+        }
+    }
+}
